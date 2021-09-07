@@ -1,0 +1,20 @@
+getting the status of the repo
+> git status 
+
+initializing the repo
+> git init
+
+add all current files to staging area
+> git add .
+
+add a specific file to staging area
+> git add "initial-commit.txt"
+
+commit a file to master(main)
+> git commit -m "added first .txt file"
+
+add your email
+> git config user.email "mayamostafa@gmail.com"
+
+add your username
+> git config user.name "Mai Mostafa"
