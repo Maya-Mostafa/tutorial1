@@ -67,3 +67,25 @@ revert unstaged changes, i.e. checkout to the head of the current branch of the 
 
 revert all unstaged files
 > git checkout .
+
+better way for revert unstaged changes than checkout
+> git restore <fileName>
+
+delete untracked files, list first entries
+> git clean -dn
+
+delete untracked files, force delete without asking more questions
+> git clean -df
+
+unstage changes in a file
+> git reset <fileName>
+
+uncommit a commit, soft commit with head step 1
+> git reset --soft HEAD~1
+> git status
+> git ls-files
+
+uncommit a commit, commit with head step 1
+> git reset HEAD~1
+> git status
+> git ls-files
