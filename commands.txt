@@ -17,4 +17,53 @@ add your email
 > git config user.email "mayamostafa@gmail.com"
 
 add your username
-> git config user.name "Mai Mostafa"
+> git config user.name "Maya-Mostafa"
+
+get git log for commits with id
+> git log
+
+load a specific commit by Id "checkout"
+> git checkout <commitId>
+> git checkout master
+
+get branches information plus the current one
+> git branch
+
+create new branch
+> git branch second-branch
+
+switch to another branch
+> git checkout second-branch
+
+create & switch to another new branch in 1 cmd
+> git checkout -b third-branch
+
+merge branches (merge third branch into master)
+> git merge tird-branch
+
+head is the latest commit in the checked-out branch
+> git checkout <branchName>
+> git log
+
+detached head, when you checkout a commit independent of the branch
+> git checkout <commitId>
+
+switch branches & create them
+> git switch third-branch
+> git switch -c fourth-branch
+
+switch only for branches
+checkout for branches & commits
+
+list files in branch
+> git ls-files
+
+to delete a file from repo
+> git rm working-with-branches.txt
+> git commit -m "deleting text file  working-with-branches"
+
+revert unstaged changes, i.e. checkout to the head of the current branch of the last commit for a file
+> git checkout <fileName>
+
+revert all unstaged files
+> git checkout .
