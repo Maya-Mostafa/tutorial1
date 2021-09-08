@@ -2,4 +2,8 @@ this is the 2nd commit
 
 I forgot to add a commit here 
 
+<<<<<<< HEAD
 3rd commit to forget
+=======
+Detached branch change 012
+>>>>>>> detached-branch
