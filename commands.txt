@@ -100,3 +100,10 @@ delete branch not merged
 
 delete branch merged (force delete)
 > git branch -D <branchName> <branchName>
+
+dealing with detached head
+> git checkout <commitId>
+> git <doRequiredChanges>
+> git branch <detachedHeadBranchName>
+> git switch master
+> git merge <detachedHeadBranchName>
