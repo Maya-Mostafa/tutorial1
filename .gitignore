@@ -1,1 +1,2 @@
 *.log
+!test3.log
