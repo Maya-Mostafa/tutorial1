@@ -1,17 +1,20 @@
-getting the status of the repo
+check installed version
+git --version 
+
+getting the status of the repo (working directory and staging area status)
 > git status 
 
-initializing the repo
+initializing the repo (create empty git repository)
 > git init
 
 add all current files to staging area
 > git add .
 
 add a specific file to staging area
-> git add "initial-commit.txt"
+> git add <fileName>
 
 commit a file to master(main)
-> git commit -m "added first .txt file"
+> git commit -m "<commit message>"
 
 add your email
 > git config user.email "mayamostafa@gmail.com"
@@ -19,7 +22,7 @@ add your email
 add your username
 > git config user.name "Maya-Mostafa"
 
-get git log for commits with id
+get git log for commits with id (display all commits in current branch )
 > git log
 
 load a specific commit by Id "checkout"
@@ -55,7 +58,7 @@ switch branches & create them
 switch only for branches
 checkout for branches & commits
 
-list files in branch
+list files in branch (list data in staging area)
 > git ls-files
 
 to delete a file from repo
@@ -107,3 +110,6 @@ dealing with detached head
 > git branch <detachedHeadBranchName>
 > git switch master
 > git merge <detachedHeadBranchName>
+
+cleaning project by force deleting all changed after the last commit
+> git clean -df
